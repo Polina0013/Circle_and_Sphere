@@ -35,16 +35,16 @@ Circle<T>::Circle() : _center(Point<T>()), _radius(T()) {}
 
 template<class T>
 Circle<T>::Circle(Point<T> center, T radius) {
-    _center = center;
+    set_center(center);
     set_radius(radius);
 }
 
 template<class T>
 Circle<T>::Circle(T center_x, T center_y, T radius) {
     Point<T> center(center_x, center_y);
-    _center = center;
+    set_center(center);
     set_radius(radius);
-    //_radius = radius;
+
 }
 
 template<class T>
@@ -104,5 +104,5 @@ std::string Circle<T>::check_relative_location(const Circle<T>& other) const {
         return "One circle is inside the other";
     };
 
-    return "-1";
+    return "Unknown relationship";
 }

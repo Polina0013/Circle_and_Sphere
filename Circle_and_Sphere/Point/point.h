@@ -5,6 +5,7 @@
 
 template<class T>
 class Point {
+protected:
     T _x;
     T _y;
 public:
@@ -39,13 +40,13 @@ Point<T>::Point(const Point<T>& other) {
 
 template<class T>
 void Point<T>::set_x(T x) { 
-    if (!isdigit(x)) throw std::logic_error("Not a number entered!");
+    //if (!isdigit(x)) throw std::logic_error("Not a number entered!");  // работает только с char
     _x = x;
 }
 
 template<class T>
 void Point<T>::set_y(T y) {
-    if (!isdigit(y)) throw std::logic_error("Not a number entered!");
+    //if (!isdigit(y)) throw std::logic_error("Not a number entered!");  // работает только с char
     _y = y;
 }
 
