@@ -3,8 +3,8 @@
 
 #include "point.h"
 #include "circle.h"
-#include "point3D.h" // не забыть подключить
-#include "sphere.h"  // не забыть подключить
+#include "point3D.h"
+#include "sphere.h"
 
 //#define USER_INPUT
 #define TESTS
