@@ -104,12 +104,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\user\source\repos\Circle_and_Sphere\Circle;C:\Users\user\source\repos\Circle_and_Sphere\Point;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\user\source\repos\github\Circle_and_Sphere\Circle_and_Sphere\Circle;C:\Users\user\source\repos\github\Circle_and_Sphere\Circle_and_Sphere\Point;C:\Users\user\source\repos\github\Circle_and_Sphere\Circle_and_Sphere\Point3D;C:\Users\user\source\repos\github\Circle_and_Sphere\Circle_and_Sphere\Sphere;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\user\source\repos\Circle_and_Sphere\Circle;C:\Users\user\source\repos\Circle_and_Sphere\Point;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\user\source\repos\github\Circle_and_Sphere\Circle_and_Sphere\Sphere;C:\Users\user\source\repos\github\Circle_and_Sphere\Circle_and_Sphere\Point3D;C:\Users\user\source\repos\github\Circle_and_Sphere\Circle_and_Sphere\Circle;C:\Users\user\source\repos\github\Circle_and_Sphere\Circle_and_Sphere\Point;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

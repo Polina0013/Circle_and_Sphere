@@ -4,7 +4,6 @@
 #include <cctype>
 
 #include "point.h"
-#include "point3D.h"
 
 template<class T>
 class Point3D : Point {

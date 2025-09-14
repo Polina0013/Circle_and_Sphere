@@ -40,7 +40,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -104,11 +104,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\user\source\repos\github\Circle_and_Sphere\Circle_and_Sphere\Point;C:\Users\user\source\repos\github\Circle_and_Sphere\Circle_and_Sphere\Point3D;C:\Users\user\source\repos\github\Circle_and_Sphere\Circle_and_Sphere\Circle;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>C:\Users\user\source\repos\github\Circle_and_Sphere\Circle_and_Sphere\Point;C:\Users\user\source\repos\github\Circle_and_Sphere\Circle_and_Sphere\Point3D;C:\Users\user\source\repos\github\Circle_and_Sphere\Circle_and_Sphere\Circle;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -131,6 +135,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sphere.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Circle\Circle.vcxproj">
+      <Project>{e05bea42-acbd-4e35-a9e5-57086b4851ee}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Point3D\Point3D.vcxproj">
+      <Project>{4b46bde7-fedd-41d0-b005-beda38b56464}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Point\Point.vcxproj">
+      <Project>{c747b40f-e993-49bd-b2f1-0cdacd4fbfd8}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
